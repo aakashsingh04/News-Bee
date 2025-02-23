@@ -13,7 +13,7 @@ const App = () =>  {
 
   return(
     <>
-      <BrowserRouter>
+      <BrowserRouter baseline="/News-Bee">
         <Navbar />  
         <LoadingBar
         height={3}
@@ -21,7 +21,7 @@ const App = () =>  {
           progress={progress}
         />
         <Routes>
-          <Route exact path="/" element={<News apiKey={apiKey} country='us' setProgress={setProgress} key="general" pageSize={10} category="general"/>}></Route>
+          <Route exact path="/News-Bee" element={<News apiKey={apiKey} country='us' setProgress={setProgress} key="general" pageSize={10} category="general"/>}></Route>
           <Route exact path="/business" element={<News apiKey={apiKey} country='us' setProgress={setProgress}  key="business" pageSize={10} category="business"/>}></Route>
           <Route exact path="/entertainment" element={<News apiKey={apiKey} country='us' setProgress={setProgress}  key="entertainment" pageSize={10} category="entertainment"/>}></Route>
           <Route exact path="/general" element={<News apiKey={apiKey} country='us' setProgress={setProgress}  key="general" pageSize={10} category="general"/>}></Route>

@@ -1,7 +1,8 @@
 {
+  "homepage": "https://aakashsingh04.github.io/News-Bee/",
   "name": "newsapp",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "cra-template": "1.2.0",
     "dotenv": "^16.4.7",
@@ -10,10 +11,13 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
-    "react-top-loading-bar": "^3.0.2"
+    "react-top-loading-bar": "^3.0.2",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
